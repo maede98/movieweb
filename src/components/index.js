@@ -1,4 +1,4 @@
 
-export {default as  searchbar} from './searchbar';
+export {default as  Searchbar} from './Searchbar';
 
-export {default as  moviedeatail} from './moviedeatail';
+export {default as  Moviedeatail} from './Moviedeatail';
