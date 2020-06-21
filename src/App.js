@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import movie from './api/movie';
-import { Searchbar , Moviedeatail } from './components';
+import { Searchbar , Moviedeatail , Movielist} from './components';
 
 class App extends React.Component{
 
@@ -26,7 +26,7 @@ class App extends React.Component{
    
     }
     render(){
-      const {selectedmovie} = this.state;
+      const {selectedmovie , movie} = this.state;
       return(
          
           <Grid justify="center" container spacing={10}>
@@ -39,7 +39,7 @@ class App extends React.Component{
                  <Moviedeatail movie={selectedmovie} />
                 </Grid>
                 <Grid item xs={4}> 
-                  
+                  <Movielist movie={movie} />
                 </Grid>
               </Grid>
             </Grid>
