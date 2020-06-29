@@ -13,7 +13,6 @@ class App extends React.Component{
     handleSubmit= async (searchword) => {
       const response = await movie.get('search',{
         params: {
-          part:'snippet',
           maxResult: 5,
           key: '7a00dc759d7fa7b0dd5562f7431d6ced',
           q:searchword,
