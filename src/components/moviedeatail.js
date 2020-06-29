@@ -3,7 +3,7 @@ import { Paper, Typography } from '@material-ui/core';
 
 const Moviedeatail = ({movie}) => {
 
-if(!movie) return <div>loading...</div>
+    if(!movie) return <div>loading...</div>
 
     return (
         <React.Fragment>
