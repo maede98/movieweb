@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import movie from './api/movie';
-import { Searchbar , Moviedeatail , Movielist , Movieitem} from './components';
+import { Searchbar , Moviedeatail  , Movieitem} from './components';
 
 class App extends React.Component{
 
@@ -13,7 +13,7 @@ class App extends React.Component{
     handleSubmit= async (searchword) => {
       const response = await movie.get('search',{
         params: {
-          maxResult: 5,
+          maxResult: 6,
           key: '7a00dc759d7fa7b0dd5562f7431d6ced',
           q:searchword,
       }
@@ -38,7 +38,7 @@ class App extends React.Component{
                  <Moviedeatail movie={selectedmovie} />
                 </Grid>
                 <Grid item xs={4}> 
-                  <Movielist movie={movie} />
+                 
                 </Grid>
               </Grid>
             </Grid>
